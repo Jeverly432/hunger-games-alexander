@@ -4,26 +4,42 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
-// Example of the code — https://user-images.githubusercontent.com/20713191/144215307-35538500-b9f0-486d-abed-1a14825bb75c.png
-const styles = {
-  // FIXME: Add base styles
-  base: '',
-  // FIXME: Add sizes. Better to write down all sizes and go from higher to lower, e.g. "xl", "lg", "md", "sm", "xs"
-  //       The name of the size cannot be lower than the font size that being used, e.g. "sm" size cannot have font-size "xs"
-  //       Check out an example by a link above for better understanding
-  size: {},
-  // FIXME: Add themes. Better to name the theme using this pattern: "${color-name}-${theme-type}", e.g. "black-filled"
-  //       If there is no dividing between theme types, then feel free to use just color names, e.g. "black"
-  //       Check out an example by a link above for better understanding
-  theme: {},
-};
+export const styles = {
+  transition: 'transition-colors duration-300',
+  base: 'flex items-center justify-center whitespace-nowrap select-none',
+  size: {
+    icon: "w-11 h-11",
+    md: "h-12 px-9 font-semibold leading-[100%] tracking-[-0.02em]",
+    sm: "h-11 px-9 font-semibold text-base"
+  },
+  theme: {
+    'white-primary': "bg-primary-2 text-white border border-primary-3 rounded-full hover:bg-primary-4",
+    'white-secondary': "bg-primary-3 text-white rounded-full hover:bg-primary-5",
+    'white-green': "bg-green-1 rounded-full",
+    'white-pink': "bg-pink-1 rounded-full"
+  },
+}; 
 
-function Button({ className, to, size, theme, children, ...otherProps }) {
+function Button({
+  className = null,
+  to = null,
+  size,
+  theme,
+  children,
+  transition = false,
+  ...otherProps
+}) {
   const Tag = to ? Link : 'button';
 
   return (
     <Tag
-      className={clsx(styles.base, styles.size[size], styles.theme[theme], className)}
+      className={clsx(
+        styles.base, 
+        styles.size[size], 
+        styles.theme[theme], 
+        transition && styles.transition, 
+        className
+      )}
       to={to}
       {...otherProps}
     >
@@ -38,11 +54,7 @@ Button.propTypes = {
   size: PropTypes.oneOf(Object.keys(styles.size)).isRequired,
   theme: PropTypes.oneOf(Object.keys(styles.theme)).isRequired,
   children: PropTypes.node.isRequired,
-};
-
-Button.defaultProps = {
-  className: null,
-  to: null,
+  transition: PropTypes.bool,
 };
 
 export default Button;
