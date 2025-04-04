@@ -67,7 +67,7 @@ function Hero() {
             <h1 className="font-aeonik text-7xl bg-clip-text pt-[51px] bg-hero-gradient text-transparent leading-[113%] tracking-[-0.01em] max-w-[655px]">
               Revolutionize&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; your DevOps journey with DevOptima
             </h1>
-            <p className="text-gray-1 max-w-[689px] leading-[150%] font-light text-xl tracking-[-0.01em] pt-6">
+            <p className="text-gray-1 max-w-[689px] leading-normal font-light text-xl tracking-[-0.01em] pt-6">
               Empower teams to innovate faster through streamlined development, efficient automated workflows, and reliable scaling.
             </p>
             <form onSubmit={handleSubmit}>

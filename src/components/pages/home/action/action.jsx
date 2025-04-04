@@ -10,7 +10,7 @@ function Action() {
           <h2 className="font-aeonik bg-action-gradient bg-clip-text text-transparent text-5xl leading-[113%] tracking-[-0.01em] text-center">
             Ready to elevate your DevOps strategy?
           </h2>
-          <p className="text-gray-1 pt-[17px] font-light text-xl leading-[150%] tracking-[-0.02em] max-w-[716px] text-center">
+          <p className="text-gray-1 pt-[17px] font-light text-xl leading-normal tracking-[-0.02em] max-w-[716px] text-center">
             Join the multitude of companies benefiting from optimized DevOps practices. Contact us to discover how DevOptima can help your business.
           </p>
           <div className="flex pt-10 gap-[18px]">

@@ -121,7 +121,7 @@ function Footer() {
               ))}
             </ul>
           </div>
-          <p className="text-gray-1 font-light text-sm leading-[150%] tracking-[-0.02em]">Devoptima {new Date().getFullYear()} © All rights reserved</p>
+          <p className="text-gray-1 font-light text-sm leading-normal tracking-[-0.02em]">Devoptima {new Date().getFullYear()} © All rights reserved</p>
         </div>
       </div>
     </footer>

@@ -35,7 +35,7 @@ function Solutions() {
             <br />
             for operational excellence
           </h2>
-          <p className="pt-4 text-xl max-w-[556px] text-center mx-auto text-gray-1 font-light leading-[150%] tracking-[-0.02em]">
+          <p className="pt-4 text-xl max-w-[556px] text-center mx-auto text-gray-1 font-light leading-normal tracking-[-0.02em]">
             Tailored DevOps expertise driving your business momentum.
             Personalized solutions for growth and evolution.
           </p>

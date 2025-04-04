@@ -9,9 +9,9 @@ import Avatar2 from "images/home/feedback-2.png"
 const list = [
   {
     id: 0,
-    icon: <FeedbackIcon1 className="w-[160px] h-[160px]"/>,
+    icon: <FeedbackIcon1 className="w-40 h-40"/>,
     description: (
-      <p className="font-light text-2xl leading-[150%] tracking-[-0.01em] text-gray-1">
+      <p className="font-light text-2xl leading-normal tracking-[-0.01em] text-gray-1">
         Thanks to DevOptima, our team can focus more on <strong>innovation</strong> and less on operational challenges. Their <strong>cloud management solutions</strong> are top-notch.
       </p>
     ),
@@ -21,9 +21,9 @@ const list = [
   },
   {
     id: 1,
-    icon: <FeedbackIcon2 className="w-[160px] h-[160px]"/>,
+    icon: <FeedbackIcon2 className="w-40 h-40"/>,
     description: (
-      <p className="font-light text-2xl leading-[150%] tracking-[-0.01em] text-gray-1">
+      <p className="font-light text-2xl leading-normal tracking-[-0.01em] text-gray-1">
         DevOptima has been a game-changer for us. With their support, we&apos;ve shifted our focus <strong>from operational hurdles to pushing boundaries in innovation.</strong>
       </p>
     ),
@@ -46,7 +46,7 @@ function Feedback() {
             {list.map((item, index) => (
               <li key={item.id} className="flex flex-col w-full max-w-[521px]">
                 <div className="relative w-16 h-16 select-none pointer-events-none">
-                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px]">
+                  <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40">
                     {item.icon}
                   </div>
                 </div>
