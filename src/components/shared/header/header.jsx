@@ -47,7 +47,7 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <Button size='md' theme='white-primary' href='/' transition>Get started</Button>
+            <Button size='md' theme='white-primary' transition >Get started</Button>
           </div>
         </div>
       </header>
