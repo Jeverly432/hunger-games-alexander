@@ -1,7 +1,7 @@
 import Link from 'components/shared/link';
 import Logo from "svgs/logo.inline.svg"
 import Button from '../button';
-import { HeaderMenu } from 'constants/menu';
+import { HeaderMenu } from 'constants/menus';
 
 function Header() {
   return (

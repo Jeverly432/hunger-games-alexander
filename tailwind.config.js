@@ -28,6 +28,8 @@ module.exports = {
         'linear-gradient(180deg, rgba(33, 66, 136, 0.25) 0%, rgba(8, 20, 43, 0.25) 100%)',
       'about-gradient': 
         'radial-gradient(circle, rgba(0, 84, 255, 0.2) 0%, rgba(0, 84, 255, 0) 56%)', 
+      'about-icon-gradient':
+        'linear-gradient(180deg, rgba(40, 74, 144, 0.35) 0%, rgba(40, 74, 144, 0.14) 100%)'
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
@@ -63,6 +65,7 @@ module.exports = {
       },
       blue: {
         1: '#172136',
+        2: '#749FF6'
       },
     }),
     screens: {

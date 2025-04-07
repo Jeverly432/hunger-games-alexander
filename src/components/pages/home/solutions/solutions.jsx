@@ -26,7 +26,7 @@ const list = [
 
 function Solutions() {
   return (
-    <section className="pt-[157px]">
+    <section className="pt-[154px]">
       <div className="container">
         <div className="flex flex-col relative">
           <div className="absolute w-[1220px] h-[396px] bg-blur-hero-ellipse rounded-full blur-[150px] bottom-3 left-1/2 -translate-x-1/2 select-none pointer-events-none" />

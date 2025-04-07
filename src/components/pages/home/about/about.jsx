@@ -8,25 +8,25 @@ import Icon4 from "svgs/home/about-4.inline.svg"
 export const list = [
   {
     id: 0,
-    icon: <Icon1 className="w-9 h-9" />,
+    icon: <Icon1 className="w-[22px] h-[22px]" />,
     title: "DevOps transformation",
     description: "Reshaping businesses with DevOps expertise."
   },
   {
     id: 1,
-    icon: <Icon2 className="w-9 h-9" />,
+    icon: <Icon2 className="w-[22px] h-[22px]" />,
     title: "Efficient operations",
     description: "Streamline processes for productivity gains."
   },
   {
     id: 2,
-    icon: <Icon3 className="w-9 h-9" />,
+    icon: <Icon3 className="w-[22px] h-[22px]" />,
     title: "CI/CD implementation",
     description: "Seamless software delivery pipeline."
   },
   {
     id: 3,
-    icon: <Icon4 className="w-9 h-9" />,
+    icon: <Icon4 className="w-[22px] h-[22px]" />,
     title: "Automation mastery",
     description: "Unlock full automation potential."
   },
@@ -52,9 +52,11 @@ function About() {
               {list.map((item) => (
                 <li key={item.id} className="flex flex-col max-w-[242px]">
                   <div className="flex relative w-[36px] h-[36px]">
-                    <span className="absolute w-[100px] h-[100px] bg-about-gradient -left-10 top-2.5 -translate-y-1/2 z-1" />
-                    <div className="absolute -left-2.5 z-10 -top-2">
-                      {item.icon}
+                    <span className="absolute w-[100px] h-[100px] bg-about-gradient -left-8 top-4 -translate-y-1/2 z-1" />
+                    <div className="absolute left-0 z-10 -top-0.5">
+                      <div className="flex items-center justify-center w-9 h-9 bg-about-icon-gradient rounded-[9px] border border-blue-2 border-opacity-20">
+                        {item.icon}  
+                      </div>                  
                     </div>
                   </div>
                   <h3 className="font-medium text-xl leading-[125%] tracking-[-0.02em] pt-3.5">

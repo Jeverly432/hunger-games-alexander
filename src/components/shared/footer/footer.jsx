@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Logo from "svgs/footer/logo.inline.svg"
 import clsx from 'clsx';
-import { FooterMenu } from "constants/menu"
+import { FooterMenu } from "constants/menus"
 
 function Footer() {
   return (
